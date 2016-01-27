@@ -22,7 +22,7 @@ Sure, the cook could do everything. In a small restaurant with only a few custom
 
 In Rails, the Model-View-Controller paradigm helps us separate our concerns and know where to put certain kinds of code. 
 
-We could put all of our code in one file, but then  file is in the same spot as that overworked cook - doing so much that nobody knows what it's supposed to be doing. In a tiny application with only one developer, this might work for a while, but as the application and the team grow, everyone needs to know where to go to find certain kinds of code.
+We could put all of our code in one file, but then the file is in the same spot as that overworked cook - doing so much that nobody knows what it's supposed to be doing. In a tiny application with only one developer, this might work for a while, but as the application and the team grow, everyone needs to know where to go to find certain kinds of code.
 
 With that in mind, let's look again at the components of the MVC pattern:
 
