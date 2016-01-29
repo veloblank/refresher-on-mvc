@@ -43,3 +43,5 @@ By knowing which component is responsible for which concern, we can know where t
 ## Separating Even More Concerns
 
 We know the view is responsible for presentation logic, but what happens when our application grows and some presentation logic needs to be shared across more than one view? That's where `helpers` come in, and we'll be tackling that in the next lesson.
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/refresher-on-mvc' title='Refresher on MVC'>Refresher on MVC</a> on Learn.co and start learning to code for free.</p>
