@@ -27,7 +27,7 @@ We could put all of our code in one file, but then the file is in the same spot 
 With that in mind, let's look again at the components of the MVC pattern:
 
 + **Models:** Provide the *business logic* of the application and access and store data. Models do most of the 'heavy lifting' of manipulating data and enforcing the 'rules' of the application.
-+ **Views:** Provide the *presentation logic* of the application. allow for user interaction. Views only care about showing a user formatted data and giving them ways to interact with it.
++ **Views:** Provide the *presentation logic* of the application and allow for user interaction. Views only care about showing a user formatted data and giving them ways to interact with it.
 + **Controllers:** Provide communications between the models and the views and help *control* the flow of data.
 
 Okay, models are responsible for *business logic* and views are responsible for *presentation logic*, but what does that mean?
@@ -44,4 +44,4 @@ By knowing which component is responsible for which concern, we can know where t
 
 We know the view is responsible for presentation logic, but what happens when our application grows and some presentation logic needs to be shared across more than one view? That's where `helpers` come in, and we'll be tackling that in the next lesson.
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/refresher-on-mvc' title='Refresher on MVC'>Refresher on MVC</a> on Learn.co and start learning to code for free.</p>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/refresher-on-mvc'>Refresher On MVC</a> on Learn.co and start learning to code for free.</p>
