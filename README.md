@@ -14,7 +14,7 @@ We'll review the concepts of MVC and learn some new key concepts.
 
 Separation of Concerns is a design principle that helps us keep code logically organized by ensuring that each part of an application concerns itself with a specific job.
 
-Remember the restaurant analogy? In a restaruant, there is a separation of concerns among the staff - A *server* takes your order, a *cook* prepares your order, a *food runner* brings it to your table, and a *busser* cleans up after you - and all of them work together to provide the cohesive experience of eating out.
+Remember the restaurant analogy? In a restaurant, there is a separation of concerns among the staff - A *server* takes your order, a *cook* prepares your order, a *food runner* brings it to your table, and a *busser* cleans up after you - and all of them work together to provide the cohesive experience of eating out.
 
 Sure, the cook could do everything. In a small restaurant with only a few customers, it might be manageable for the same person who takes your order to be the one that cooks it. But, if that restaurant is bigger than say, a food truck, there's a good chance that things would get out of control and the cook would never know what she or he is supposed to do at any given time. Likewise, nobody else at the restaurant would know what the cook is supposed to be doing, and everyone would go looking at the cook for *everything*, which seems like kind of a nightmare!
 
