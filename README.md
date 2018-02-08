@@ -30,12 +30,12 @@ Now that we have identified the core components, let's examine what they actuall
 4. The ```controller``` function (_which does not change data itself!_) asks the ```model``` to either send it data or to change its data
 5. The ```model``` accesses/manipulates the actual data and returns the desired result to the ```controller```
 6. The ```controller``` packs a response and sends it back to the client that sent the initial request
-7. The ```view``` _represents_ the data
+7. The ```view``` _represents_ the data for the user
 
 In considering the above steps, try to answer the following question:
 * Do the **model** and **view** have any actual direct interaction?
 * To what MVC component does the **routing** functionality, described in step 3, belong to?
-* Is the data represented in the ```view```, that the user sees and interacts with, anything but a virtual copy of the _actual_ data they perceive they are interacting with?
+* Is the data represented in the ```view```, that the user sees and interacts with, anything but a virtual copy of the _actual_ data a user perceives they are interacting with?
 
 ### An Advantage of Modularity
 In our example, we have identified three distinct parts, and two distinct communication layers: TODO GRAPHIC? (```model``` <--> ```controller``` <--> ```view```). These communication layers have a 'standardizing' effect. They enable us to de-couple different parts of our ```MVC``` and re-use them! Let's look at how this might be possible in the following example:
