@@ -24,8 +24,8 @@ At its core, MVC is designed to modularize distinct functionality within an appl
 
 Now that we have identified the core components, let's examine what they actually do when a user engages with our web application:
 
-1. A user, through interaction with the ```view```, (in this case, the browser's GUI), requests data from a server
-2. The request is sent across the internet to a server
+1. A user, through interaction with the ```view```, (in this case, the browser's GUI), requests data from the server
+2. The request is sent across the internet to the server
 3. The server interprets the request and ```routes``` it to the appropriate ```controller``` function designed to fulfill that request
 4. The ```controller``` function (_which does not change data itself!_) asks the ```model``` to either send it data or to change its data
 5. The ```model``` accesses/manipulates the actual data and returns the desired result to the ```controller```
