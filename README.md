@@ -9,7 +9,7 @@ We'll review the Model-view-controller (MVC) paradigm, how Rails implements it, 
 2. Examine an implementation of MVC
 3. Understand the Rails implementation of an MVC architecture
 
-## Forward
+## Foreword
 
 Within the curriculum, you have been working hard learning defined small scale technical concepts, problems, and solutions. To understand MVC, we need to back up and take on a macroscopic, application wide, lens. For this lesson, we are assuming the mindset of a [_software architect_][software_architect].
 
