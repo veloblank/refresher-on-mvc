@@ -77,3 +77,6 @@ Now, consider Rails being used as a static website server that users can fill ou
 * While Rails emulates the majority of an MVC structure, it is not a perfect match and depends on how it is used
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/refresher-on-mvc'>Refresher On MVC</a> on Learn.co and start learning to code for free.</p>
+
+[software_architect]: https://en.wikipedia.org/wiki/Software_architecture
+[al_gore]: https://goo.gl/QeiWDG
