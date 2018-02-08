@@ -2,8 +2,7 @@
 
 ## Overview
 
-We'll review what a Model-view-controller (MVC) is, the problems it solves, and learn some new key concepts.
-Before bombarding you with information about how an MVC pattern works, we will describe the problem it addresses.
+We'll review the Model-view-controller (MVC) paradigm, how Rails implements it, and learn some new key concepts.
 
 ## Objectives
 1. Understand why we compartmentalize an application's functionality
