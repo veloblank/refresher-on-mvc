@@ -44,32 +44,32 @@ Imagine we had two databases, one populated with names, weights, and images of t
 
 Instead of doing all our work twice, we can swap out and re-use modularized parts of our MVC! Our ```view``` can remain the same and simply display animals' images, names, and weights. Our ```controller``` can be expected to handle the same types of request: i.e. "give me all the animals", "give me an animal by name", "change this animals weight".
 
-Using an MVC architecture, we would only need to replace our ```model``` and voilá! We are well on our way towards sharing our passion, via the magic of MVC and [Al Gore's internet][al_gore].
+Using an MVC architecture, we would only need to replace our ```model``` and voilá! We are well on our way towards sharing our passion, via the magic of MVC and [Al Gore's internet][al_gore], with the world.
 
 ## Quick Recap
 ###### MVC is designed to:
 * Be language and application agnostic
 * Be modular: every part is distinct, encapsulated, and can be replaced without breaking the rest of the application
-* Use a ```controller``` to facilitate communication between the ```view```, which the user interfaces with, and the ```model```
+* Use a ```controller``` to facilitate communication between the ```view```, (which the user interfaces with), and the ```model```
 * Stores 'truth', the _actual data_, in the ```model```, which is far abstracted and independent from its representation in the ```view```
 
 ## Where Rails Fits In
-Now that we have reviewed MVC outside of the context of Rails, let's recap on how Rails implements the paradigm.
+Now that we have reviewed MVC outside of the context of Rails, let's examine how Rails implements the paradigm.
 
 #### Controller and Model:
-The ```controller``` and ```model``` implementation in Rails is straight forward to align with our understanding of MVC. Not only are they named aptly, but they encapsulate their responsibilities well. The controller actions do not actually change any data. They call methods on our ```models``` (via instance and class methods) to handle that. The controller then couriers this information to the ```view```!.
+The ```controller``` and ```model``` implementation in Rails is straight forward to align with our understanding of MVC. Not only are they named aptly, but they encapsulate their responsibilities well. The controller actions do not change any data. They call methods on our ```models``` (via instance and class methods) to handle that. The controller then couriers this information to the ```view```!.
 
-It is important to recognize that, while our chosen database (in our case so far an SQL iteration) is a distinct entity from our Rails application, it is considered encapsulated in the ```model``` of our Rails application with our classes. It would be appropriate to consider the database as the _actual_ ledger of true data in our model, and our Rails models/Active Record as the logic on top that allows fetching/altering of that data.
+It is important to recognize that, while our chosen database (in our case so far an SQL iteration) is a distinct entity from our Rails application, it is considered encapsulated in the ```model``` of our Rails application with our classes. It would be appropriate to consider the database as the _actual_ ledger of true data in our ```model```, and our Rails models/Active Record as the logic on top that allows manipulation of that data.
 
 #### View:
 
 The Rails implementation of the ```view``` in MVC has a few caveats. In order to understand it, we will examine its implementation in two common use cases of a Rails application:
 
 * ##### As data server:
-Consider the ```view``` paradigm when our Rails application is being used solely to return data (i.e. JSON) to requests. In this example, Rails neither manages the _presentation_ of the data it is serving (that's up to the client/browser who received the JSON!), nor does it describe what things belonging to the ```view``` the controller should be listening for (again, that's up to the client!). In this example, Rails is sending data, fetched from the ```model```, through the ```controller```, into the void of the internet for something else (the browser/client) to use however it wants. In this JSON server example, we can see how the responsibilities of the ```view``` are abstracted out of our Rails application entirely!
+Consider the ```view``` paradigm when our Rails application is being used solely to return data (i.e. JSON) to requests. In this example, Rails neither manages the _presentation_ of the data it is serving (that's up to the client/browser who received the JSON!), nor does it describe what things belonging to the ```view``` the controller should be listening for (again, that's up to the client!). In this example, Rails is sending data, fetched from the ```model```, through the ```controller```, into the void of the internet for something else, (the browser/client), to use however it wants. In this JSON server example, we can see how the responsibilities of the ```view``` are abstracted out of our Rails application entirely!
 
 * ##### As a static website server:
-Now, consider Rails being used as a static website server that users can fill out there exciting medical billing information through. In this instance, the browser has received HTML and CSS directly from Rails. This HTML and CSS **tells the browser how to display the view** and **what user input, via form submissions, it should relay back to the controller**. In contrast to our JSON server example, we can now see Rails re-assuming some responsibilities of the ```view```.
+Now, consider Rails being used as a static website server that users can fill out there exciting medical billing information through. In this instance, the browser has received HTML and CSS directly from Rails. This HTML and CSS **tells the browser how to display the view** and **what user input, via form submissions, it should relay back to the controller**. In contrast to our JSON server example, we can now see Rails re-assuming responsibilities of the ```view```.
 
 ## Summary
 * The MVC paradigm is language and application agnostic
