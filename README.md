@@ -78,7 +78,7 @@ bank only has to build a new `view`, that is, an iPhone application.
 Oh my goodness! Amazon invents a new home device that talks to you! Again, the
 bank only needs to write a new `view` (or "interface") that can leverage the
 pre-existing architecture of the bank's `controller` and `model`, so long as it
-can send information across the iternet.
+can send information across the internet.
 
 Remember, we said that _software architects_ focus  on making design decisions
 which allow for ease of change, extensibility and avoidance of bugs.  For every
